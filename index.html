@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Web JavaScript 2D Game</title>
+    <link rel="stylesheet" href = "style.css"/>
+</head>
+
+<body onkeyup="KeyCheck(event);"class="body" onload="createBox();">
+
+    <div id="mainBox" class="mainBox">
+    <div id="score" class="score">0</div>
+    <img id="girl" class="girl" src ="Run (0).png"/>
+    <div id="endGame" class="endGame">
+        <div>Game Over</div>
+        <div>Your Score</div>
+        <div id="endScore">0</div>
+        <button onclick="newGame();" class="newGame">New Game</button>    
+    </div>
+    <div id="Welcome" class="Welcome">
+        <div class="v1">Welcome!</div>
+        <div class="v1">To</div>
+        <div class="v4">Legend Of Kunai</div>
+        <div class="v3">Escape from the Kunaies To Win</div>
+        <div class="v2">Click Space bar to run</div>
+        <div class="v2">Click Up Arrow Key to Jump</div>
+        </div>
+        <div id="finish" class="finish">
+            <div class="v4">Congratulations!</div>
+            <div class="v4">You Won</div>
+            <button onclick="newGame();" class="newGame2">Play Again</button>
+        </div> 
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
